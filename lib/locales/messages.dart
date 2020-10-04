@@ -1,5 +1,5 @@
-import 'package:flutter_scaffold/locales/en_US.dart';
-import 'package:flutter_scaffold/locales/th_TH.dart';
+import 'package:theebad/locales/en_US.dart';
+import 'package:theebad/locales/th_TH.dart';
 import 'package:get/get.dart';
 
 class Messages extends Translations {

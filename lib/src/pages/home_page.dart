@@ -1,8 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_scaffold/src/widgets/shared/bottom_bar.dart';
+
 import 'package:get/get.dart';
+
+import '../widgets/shared/bottom_bar.dart';
 
 class HomePage extends StatelessWidget {
   @override

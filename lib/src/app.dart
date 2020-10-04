@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_scaffold/locales/messages.dart';
-import 'package:flutter_scaffold/src/constants/shared.dart';
-import 'package:flutter_scaffold/src/pages/home_page.dart';
+import 'package:theebad/locales/messages.dart';
+import 'package:theebad/src/constants/shared.dart';
+import 'package:theebad/src/pages/home_page.dart';
 import 'package:get/get.dart';
 import 'constants/theme.dart';
 

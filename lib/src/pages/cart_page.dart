@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_scaffold/src/widgets/shared/bottom_bar.dart';
+
+import '../widgets/shared/bottom_bar.dart';
 
 class CartPage extends StatelessWidget {
   @override

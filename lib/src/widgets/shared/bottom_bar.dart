@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
-import 'package:flutter_scaffold/src/pages/cart_page.dart';
-import 'package:flutter_scaffold/src/pages/home_page.dart';
-import 'package:flutter_scaffold/src/pages/message_page.dart';
-import 'package:flutter_scaffold/src/pages/user_page.dart';
+import 'package:theebad/src/pages/cart_page.dart';
+import 'package:theebad/src/pages/home_page.dart';
+import 'package:theebad/src/pages/message_page.dart';
+import 'package:theebad/src/pages/user_page.dart';
 import 'package:get/get.dart';
 
 class BottomBar extends StatelessWidget {
