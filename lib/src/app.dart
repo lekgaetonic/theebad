@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_scaffold/locales/messages.dart';
+import 'package:flutter_scaffold/src/constants/shared.dart';
 import 'package:flutter_scaffold/src/pages/home_page.dart';
 import 'package:get/get.dart';
 import 'constants/theme.dart';
@@ -10,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'App',
+      title: Shared().appName,
       translations: Messages(), // your translations
       // locale: ui.window.locale,
       locale: Locale('th', 'TH'),

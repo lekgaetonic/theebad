@@ -8,8 +8,10 @@ import 'package:get/get.dart';
 
 class BottomBar extends StatelessWidget {
   BottomBar(this.selectedIndex, {Key key, Color this.backgroundColor});
+
   int selectedIndex = 0;
-  Color backgroundColor = Colors.transparent;
+  Color backgroundColor = Colors.white;
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(

@@ -1,3 +1,3 @@
 class Shared {
-  final String AppName = 'Flutter Demo';
+  final String appName = 'Flutter Demo';
 }
