@@ -6,7 +6,5 @@ import 'package:flutter_scaffold/utils/http_override.dart';
 
 void main() {
   HttpOverrides.global = CustomHttpOverrides();
-  runApp(
-    App(),
-  );
+  runApp(App());
 }
