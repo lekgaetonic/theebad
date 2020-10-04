@@ -12,7 +12,7 @@ class UserPage extends StatelessWidget {
         statusBarColor: Colors.transparent,
       ),
       child: Scaffold(
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.pinkAccent,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           title: Text(
@@ -35,7 +35,7 @@ class UserPage extends StatelessWidget {
         ),
         bottomNavigationBar: BottomBar(
           3,
-          backgroundColor: Colors.green,
+          backgroundColor: Colors.pinkAccent,
         ),
       ),
     );
