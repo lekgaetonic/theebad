@@ -3,16 +3,14 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class AppTheme {
-  final primary = Color(0xFFF5821f);
-  final secondary = Color(0xFF404040);
   final themeData = ThemeData(
     fontFamily: 'Sukhumvit',
-    primarySwatch: Colors.orange,
-    primaryColor: Colors.white,
+    primarySwatch: Colors.green,
+    primaryColor: Colors.amber,
     appBarTheme: AppBarTheme(
       shadowColor: Colors.transparent,
       iconTheme: IconThemeData(
-        color: Colors.white,
+        color: Colors.black,
       ),
       // centerTitle: false
       // textTheme: TextTheme(

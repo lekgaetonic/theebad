@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:theebad/locales/messages.dart';
-import 'package:theebad/src/constants/shared.dart';
 import 'package:theebad/src/pages/home_page.dart';
 import 'package:get/get.dart';
 import 'constants/theme.dart';
