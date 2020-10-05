@@ -12,30 +12,75 @@ class HomePage extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
+        // systemNavigationBarDividerColor: Colors.transparent,
       ),
       child: Scaffold(
-        backgroundColor: Colors.indigoAccent,
+        backgroundColor: Colors.white,
+        extendBodyBehindAppBar: true,
         // appBar: AppBar(
+        //   // brightness: Brightness.dark,
         //   backgroundColor: Colors.transparent,
         //   title: Text(
-        //     'Home',
-        //     style: TextStyle(
-        //       color: Colors.white,
-        //     ),
+        //     'app_name'.tr,
+        //     style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+        //     // style: TextStyle(
+        //     //   color: Colors.white,
+        //     // ),
         //   ),
         // ),
         body: SafeArea(
           child: SingleChildScrollView(
-            child: Center(
-              child: Text(
-                'home'.tr,
-              ),
+            child: Column(
+              children: [
+                Center(
+                  child: Text(
+                    'app_name'.tr,
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Center(
+                  child: Text(
+                    'app_name'.tr,
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  height: 200,
+                ),
+                Center(
+                  child: Text(
+                    'app_name'.tr,
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  height: 200,
+                ),
+                Center(
+                  child: Text(
+                    'app_name'.tr,
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  height: 200,
+                ),
+                Center(
+                  child: Text(
+                    'app_name'.tr,
+                    style: TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+                  ),
+                ),
+                Container(
+                  height: 200,
+                )
+              ],
             ),
           ),
         ),
         bottomNavigationBar: BottomBar(
           0,
-          backgroundColor: Colors.indigoAccent,
+          backgroundColor: Colors.white,
         ),
       ),
     );

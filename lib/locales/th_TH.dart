@@ -1,4 +1,5 @@
 const Map<String, String> th_TH = {
+  'app_name': 'ตีแบต',
   'login': 'เข้าสู่ระบบ',
   'email': 'อีเมล์',
   'password': 'รหัสผ่าน',

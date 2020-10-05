@@ -11,7 +11,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: Shared().appName,
+      title: 'app_name'.tr,
       translations: Messages(), // your translations
       // locale: ui.window.locale,
       locale: Locale('th', 'TH'),
