@@ -1,7 +1,6 @@
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import '../widgets/shared/bottom_bar.dart';
 
@@ -35,31 +34,32 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2019/07/5-Akane-Yamaguchi-980x550.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfbadminton.com/wp-content/uploads/2020/09/BWF_VPC_Poster2.png'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2020/09/Christo-Popov-980x550.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2019/10/Brian-Yang3.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2018/11/Finals_Line-Christophersen.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2020/09/Kento-Momota_Malaysia-Masters-2020-980x550.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2020/01/2-Carolina-Marin.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2020/09/Srikanth9-768x911.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2018/09/4day_Stoevas2.jpg'),
             Image.network(
-                'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=qFO9_OdPNScAX9j2qng&_nc_ht=scontent.fbkk5-4.fna&oh=074041cacdb80539316b7d7420e36e60&oe=5FA3181C'),
+                'https://bwfworldtour.bwfbadminton.com/wp-content/uploads/2020/01/Marcus-Ellis-Lauren-Smith2.jpg'),
           ],
         ),
       ),
+      extendBody: true,
       bottomNavigationBar: BottomBar(
         0,
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.transparent,
       ),
     );
   }

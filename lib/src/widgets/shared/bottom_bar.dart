@@ -38,8 +38,8 @@ class BottomBar extends StatelessWidget {
         ),
       ],
       currentIndex: selectedIndex,
-      // selectedItemColor: Colors.black87,
-      unselectedItemColor: Colors.white70,
+      selectedItemColor: Colors.cyan,
+      unselectedItemColor: Colors.grey[400],
       // backgroundColor: Colors.black,
       showSelectedLabels: false,
       showUnselectedLabels: false,
@@ -53,7 +53,7 @@ class BottomBar extends StatelessWidget {
     switch (index) {
       case 0:
         {
-          Get.to(HomePage());
+          Get.off(HomePage());
         }
         break;
       case 1:

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import '../widgets/shared/bottom_bar.dart';
 
 class UserPage extends StatelessWidget {
