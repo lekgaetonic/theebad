@@ -5,38 +5,33 @@ import '../widgets/shared/bottom_bar.dart';
 class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return AnnotatedRegion<SystemUiOverlayStyle>(
-      value: SystemUiOverlayStyle(
-        statusBarColor: Colors.transparent,
+    return Scaffold(
+      backgroundColor: Colors.pinkAccent,
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        title: Text(
+          'User',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
       ),
-      child: Scaffold(
-        backgroundColor: Colors.pinkAccent,
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          title: Text(
-            'User',
-            style: TextStyle(
-              color: Colors.white,
-            ),
-          ),
-        ),
-        body: SafeArea(
-          child: SingleChildScrollView(
-            child: Column(
-              children: [
-                Center(
-                  child: Text(
-                    'User',
-                  ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              Center(
+                child: Text(
+                  'User',
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
-        bottomNavigationBar: BottomBar(
-          3,
-          backgroundColor: Colors.pinkAccent,
-        ),
+      ),
+      bottomNavigationBar: BottomBar(
+        3,
+        backgroundColor: Colors.pinkAccent,
       ),
     );
   }
