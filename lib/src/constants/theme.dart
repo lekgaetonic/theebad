@@ -5,12 +5,16 @@ import 'package:flutter/material.dart';
 class AppTheme {
   final themeData = ThemeData(
     fontFamily: 'Sukhumvit',
-    primarySwatch: Colors.green,
-    primaryColor: Colors.amber,
+    primarySwatch: Colors.blue,
+    primaryColor: Color(0xfff3f3f3),
     appBarTheme: AppBarTheme(
+      elevation: 0,
+      centerTitle: true,
+      brightness: Brightness.dark,
+      color: Colors.transparent,
       shadowColor: Colors.transparent,
       iconTheme: IconThemeData(
-        color: Colors.black,
+        color: Color(0xfff3f3f3),
       ),
       // centerTitle: false
       // textTheme: TextTheme(
