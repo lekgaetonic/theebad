@@ -5,7 +5,7 @@ class MessagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.cyan,
+      backgroundColor: Colors.deepOrangeAccent,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
@@ -28,7 +28,7 @@ class MessagePage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomBar(
         1,
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.deepOrange,
       ),
     );
   }

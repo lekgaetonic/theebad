@@ -1,22 +1,25 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   final themeData = ThemeData(
-    fontFamily: 'Sukhumvit',
+    // fontFamily: 'Sukhumvit',
+    textTheme: GoogleFonts.promptTextTheme().apply(
+      displayColor: Colors.white,
+    ),
     primarySwatch: Colors.blue,
     primaryColor: Color(0xfff3f3f3),
     appBarTheme: AppBarTheme(
+      color: Colors.transparent,
       elevation: 0,
       centerTitle: true,
-      brightness: Brightness.dark,
-      color: Colors.transparent,
+      // brightness: Brightness.light,
       shadowColor: Colors.transparent,
       iconTheme: IconThemeData(
         color: Color(0xfff3f3f3),
       ),
-      // centerTitle: false
       // textTheme: TextTheme(
       //   headline1: TextStyle(fontSize: 4.0, fontWeight: FontWeight.bold),
       //   headline2: TextStyle(fontSize: 42.0, fontWeight: FontWeight.bold),
@@ -27,5 +30,6 @@ class AppTheme {
       //   bodyText1: TextStyle(fontSize: 16.0),
       // ),
     ),
+    visualDensity: VisualDensity.adaptivePlatformDensity,
   );
 }

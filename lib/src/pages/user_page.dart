@@ -30,7 +30,7 @@ class UserPage extends StatelessWidget {
       ),
       bottomNavigationBar: BottomBar(
         3,
-        backgroundColor: Colors.pinkAccent,
+        backgroundColor: Colors.pink,
       ),
     );
   }

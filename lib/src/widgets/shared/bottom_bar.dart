@@ -7,10 +7,16 @@ import 'package:theebad/src/pages/user_page.dart';
 import 'package:get/get.dart';
 
 class BottomBar extends StatelessWidget {
-  BottomBar(this.selectedIndex, {Key key, Color this.backgroundColor});
+  BottomBar(this.selectedIndex,
+      {Key key,
+      Color this.backgroundColor,
+      Color this.selectedColor,
+      Color this.unselectedColor});
 
   int selectedIndex = 0;
-  Color backgroundColor = Colors.white;
+  Color backgroundColor = Colors.yellow;
+  Color selectedColor = Colors.yellow;
+  Color unselectedColor = Colors.grey;
 
   @override
   Widget build(BuildContext context) {
@@ -38,13 +44,12 @@ class BottomBar extends StatelessWidget {
         ),
       ],
       currentIndex: selectedIndex,
-      selectedItemColor: Colors.cyan,
-      unselectedItemColor: Colors.grey[400],
-      // backgroundColor: Colors.black,
+      backgroundColor: backgroundColor,
+      selectedItemColor: selectedColor,
+      unselectedItemColor: unselectedColor,
       showSelectedLabels: false,
       showUnselectedLabels: false,
       type: BottomNavigationBarType.fixed,
-      backgroundColor: backgroundColor,
       onTap: _onItemTapped,
     );
   }
