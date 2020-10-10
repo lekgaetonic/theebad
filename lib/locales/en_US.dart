@@ -1,5 +1,5 @@
 const Map<String, String> en_US = {
-  'app_name': 'djah',
+  'app_name': 'Djah',
   'login': 'Login',
   'email': 'E-mail',
   'password': 'Password',

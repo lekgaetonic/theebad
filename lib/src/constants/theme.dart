@@ -5,10 +5,10 @@ import 'package:google_fonts/google_fonts.dart';
 
 class AppTheme {
   final themeData = ThemeData(
-    // fontFamily: 'Sukhumvit',
-    textTheme: GoogleFonts.promptTextTheme().apply(
-      displayColor: Colors.white,
-    ),
+    fontFamily: 'Sukhumvit',
+    // textTheme: GoogleFonts.prom .apply(
+    //   displayColor: Colors.white,
+    // ),
     primarySwatch: Colors.blue,
     primaryColor: Color(0xfff3f3f3),
     appBarTheme: AppBarTheme(

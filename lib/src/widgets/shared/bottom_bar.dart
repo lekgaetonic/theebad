@@ -7,6 +7,14 @@ import 'package:theebad/src/pages/user_page.dart';
 import 'package:get/get.dart';
 
 class BottomBar extends StatelessWidget {
+  var tabs = [
+    {'index': 0, 'icon': 'home', 'label': 'Home'},
+    {'index': 1, 'icon': 'people', 'label': 'Group'},
+    {'index': 2, 'icon': 'message', 'label': 'Message'},
+    {'index': 3, 'icon': 'cart', 'label': 'Shop'},
+    {'index': 4, 'icon': 'user', 'label': 'User'},
+  ];
+
   BottomBar(this.selectedIndex,
       {Key key,
       Color this.backgroundColor,
@@ -18,31 +26,94 @@ class BottomBar extends StatelessWidget {
   Color selectedColor = Colors.yellow;
   Color unselectedColor = Colors.grey;
 
+  List<BottomNavigationBarItem> setBottomBar() {
+    var _items = List<BottomNavigationBarItem>();
+    for (var tab in tabs) {
+      _items.add(BottomNavigationBarItem(
+        icon: iconByName(tab['icon'], true),
+        activeIcon: iconByName(tab['icon'], false),
+        label: tab['label'],
+      ));
+    }
+    return _items;
+  }
+
+  Icon iconByName(String name, bool outline) {
+    switch (name) {
+      case 'home':
+        if (outline) {
+          return Icon(EvaIcons.homeOutline);
+        } else {
+          return Icon(EvaIcons.home);
+        }
+        break;
+      case 'message':
+        if (outline) {
+          return Icon(EvaIcons.messageCircleOutline);
+        } else {
+          return Icon(EvaIcons.messageCircle);
+        }
+        break;
+      case 'people':
+        if (outline) {
+          return Icon(EvaIcons.peopleOutline);
+        } else {
+          return Icon(EvaIcons.people);
+        }
+        break;
+      case 'cart':
+        if (outline) {
+          return Icon(EvaIcons.shoppingCartOutline);
+        } else {
+          return Icon(EvaIcons.shoppingCart);
+        }
+        break;
+      case 'user':
+        if (outline) {
+          return Icon(EvaIcons.personOutline);
+        } else {
+          return Icon(EvaIcons.person);
+        }
+        break;
+      default:
+        {
+          return Icon(EvaIcons.archive);
+        }
+        break;
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      items: const <BottomNavigationBarItem>[
-        BottomNavigationBarItem(
-          icon: Icon(EvaIcons.homeOutline),
-          activeIcon: Icon(EvaIcons.home),
-          label: 'Home',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(EvaIcons.messageCircleOutline),
-          activeIcon: Icon(EvaIcons.messageCircle),
-          label: 'Message',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(EvaIcons.shoppingCartOutline),
-          activeIcon: Icon(EvaIcons.shoppingCart),
-          label: 'Cart',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(EvaIcons.personOutline),
-          activeIcon: Icon(EvaIcons.person),
-          label: 'User',
-        ),
-      ],
+      items: setBottomBar(),
+      // const <BottomNavigationBarItem>[
+      //   BottomNavigationBarItem(
+      //     icon: Icon(EvaIcons.homeOutline),
+      //     activeIcon: Icon(EvaIcons.home),
+      //     label: 'Home',
+      //   ),
+      //   BottomNavigationBarItem(
+      //     icon: Icon(EvaIcons.peopleOutline),
+      //     activeIcon: Icon(EvaIcons.people),
+      //     label: 'Group',
+      //   ),
+      //   BottomNavigationBarItem(
+      //     icon: Icon(EvaIcons.shoppingCartOutline),
+      //     activeIcon: Icon(EvaIcons.shoppingCart),
+      //     label: 'Cart',
+      //   ),
+      //   BottomNavigationBarItem(
+      //     icon: Icon(EvaIcons.messageCircleOutline),
+      //     activeIcon: Icon(EvaIcons.messageCircle),
+      //     label: 'Message',
+      //   ),
+      //   BottomNavigationBarItem(
+      //     icon: Icon(EvaIcons.personOutline),
+      //     activeIcon: Icon(EvaIcons.person),
+      //     label: 'User',
+      //   ),
+      // ],
       currentIndex: selectedIndex,
       backgroundColor: backgroundColor,
       selectedItemColor: selectedColor,
@@ -68,10 +139,15 @@ class BottomBar extends StatelessWidget {
         break;
       case 2:
         {
-          Get.to(CartPage());
+          Get.to(MessagePage());
         }
         break;
       case 3:
+        {
+          Get.to(CartPage());
+        }
+        break;
+      case 4:
         {
           Get.to(UserPage());
         }

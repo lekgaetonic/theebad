@@ -1,5 +1,5 @@
 const Map<String, String> th_TH = {
-  'app_name': 'djah',
+  'app_name': 'Djah',
   'login': 'เข้าสู่ระบบ',
   'email': 'อีเมล์',
   'password': 'รหัสผ่าน',
