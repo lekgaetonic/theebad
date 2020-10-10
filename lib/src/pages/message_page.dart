@@ -1,34 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:theebad/src/constants/app_colors.dart';
 import '../widgets/shared/bottom_bar.dart';
 
 class MessagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrangeAccent,
+      backgroundColor: AppColors.bodyBackground,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          'Message',
+          'Feed',
           style: TextStyle(
-            color: Colors.white,
+            color: AppColors.commonBlack,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Center(
-              child: Text(
-                'Message',
-              ),
-            ),
-          ],
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: Column(
+            children: [],
+          ),
         ),
       ),
       bottomNavigationBar: BottomBar(
-        1,
-        backgroundColor: Colors.deepOrange,
+        3,
       ),
     );
   }

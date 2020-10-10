@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:theebad/src/pages/cart_page.dart';
+import 'package:theebad/src/pages/group_page.dart';
 import 'package:theebad/src/pages/home_page.dart';
 import 'package:theebad/src/pages/message_page.dart';
+import 'package:theebad/src/pages/shop_page.dart';
 import 'package:theebad/src/pages/user_page.dart';
 import 'package:get/get.dart';
 
 class BottomBar extends StatelessWidget {
   var tabs = [
-    {'index': 0, 'icon': 'home', 'label': 'Home'},
-    {'index': 1, 'icon': 'people', 'label': 'Group'},
-    {'index': 2, 'icon': 'message', 'label': 'Message'},
-    {'index': 3, 'icon': 'cart', 'label': 'Shop'},
-    {'index': 4, 'icon': 'user', 'label': 'User'},
+    {'index': 0, 'icon': 'home', 'label': 'Home', 'page': 'home_page'},
+    {'index': 1, 'icon': 'people', 'label': 'Group', 'page': 'group_page'},
+    {'index': 2, 'icon': 'cart', 'label': 'Shop', 'page': 'shop_page'},
+    {'index': 3, 'icon': 'message', 'label': 'Message', 'page': 'message_page'},
+    {'index': 4, 'icon': 'user', 'label': 'User', 'page': 'user_page'},
   ];
 
   BottomBar(this.selectedIndex,
@@ -25,18 +27,6 @@ class BottomBar extends StatelessWidget {
   Color backgroundColor = Colors.yellow;
   Color selectedColor = Colors.yellow;
   Color unselectedColor = Colors.grey;
-
-  List<BottomNavigationBarItem> setBottomBar() {
-    var _items = List<BottomNavigationBarItem>();
-    for (var tab in tabs) {
-      _items.add(BottomNavigationBarItem(
-        icon: iconByName(tab['icon'], true),
-        activeIcon: iconByName(tab['icon'], false),
-        label: tab['label'],
-      ));
-    }
-    return _items;
-  }
 
   Icon iconByName(String name, bool outline) {
     switch (name) {
@@ -86,34 +76,8 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      items: setBottomBar(),
-      // const <BottomNavigationBarItem>[
-      //   BottomNavigationBarItem(
-      //     icon: Icon(EvaIcons.homeOutline),
-      //     activeIcon: Icon(EvaIcons.home),
-      //     label: 'Home',
-      //   ),
-      //   BottomNavigationBarItem(
-      //     icon: Icon(EvaIcons.peopleOutline),
-      //     activeIcon: Icon(EvaIcons.people),
-      //     label: 'Group',
-      //   ),
-      //   BottomNavigationBarItem(
-      //     icon: Icon(EvaIcons.shoppingCartOutline),
-      //     activeIcon: Icon(EvaIcons.shoppingCart),
-      //     label: 'Cart',
-      //   ),
-      //   BottomNavigationBarItem(
-      //     icon: Icon(EvaIcons.messageCircleOutline),
-      //     activeIcon: Icon(EvaIcons.messageCircle),
-      //     label: 'Message',
-      //   ),
-      //   BottomNavigationBarItem(
-      //     icon: Icon(EvaIcons.personOutline),
-      //     activeIcon: Icon(EvaIcons.person),
-      //     label: 'User',
-      //   ),
-      // ],
+      elevation: 0.0,
+      items: setBottomBarItems(),
       currentIndex: selectedIndex,
       backgroundColor: backgroundColor,
       selectedItemColor: selectedColor,
@@ -126,6 +90,7 @@ class BottomBar extends StatelessWidget {
   }
 
   void _onItemTapped(int index) {
+    print(index);
     switch (index) {
       case 0:
         {
@@ -134,17 +99,17 @@ class BottomBar extends StatelessWidget {
         break;
       case 1:
         {
-          Get.to(MessagePage());
+          Get.to(GroupPage());
         }
         break;
       case 2:
         {
-          Get.to(MessagePage());
+          Get.to(ShopPage());
         }
         break;
       case 3:
         {
-          Get.to(CartPage());
+          Get.to(MessagePage());
         }
         break;
       case 4:
@@ -158,5 +123,17 @@ class BottomBar extends StatelessWidget {
         }
         break;
     }
+  }
+
+  List<BottomNavigationBarItem> setBottomBarItems() {
+    var _items = List<BottomNavigationBarItem>();
+    for (var tab in tabs) {
+      _items.add(BottomNavigationBarItem(
+        icon: iconByName(tab['icon'], true),
+        activeIcon: iconByName(tab['icon'], false),
+        label: tab['label'],
+      ));
+    }
+    return _items;
   }
 }

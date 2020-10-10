@@ -1,36 +1,31 @@
 import 'package:flutter/material.dart';
+import 'package:theebad/src/constants/app_colors.dart';
 import '../widgets/shared/bottom_bar.dart';
 
 class UserPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.pinkAccent,
+      backgroundColor: Color(0xFFe5989b),
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
           'User',
           style: TextStyle(
-            color: Colors.white,
+            color: AppColors.commonBlack,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),
       body: SafeArea(
         child: SingleChildScrollView(
           child: Column(
-            children: [
-              Center(
-                child: Text(
-                  'User',
-                ),
-              ),
-            ],
+            children: [],
           ),
         ),
       ),
       bottomNavigationBar: BottomBar(
-        3,
-        backgroundColor: Colors.pink,
+        4,
       ),
     );
   }
