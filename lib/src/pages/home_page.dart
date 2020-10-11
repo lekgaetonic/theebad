@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:theebad/src/constants/app_colors.dart';
+import 'package:theebad/src/widgets/home/home_body.dart';
 import '../widgets/shared/bottom_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -21,19 +22,15 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          'Home',
+          'Maliana',
           style: TextStyle(
             color: AppColors.commonBlack,
-            fontWeight: FontWeight.bold,
+            fontSize: 26,
           ),
         ),
       ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [],
-          ),
-        ),
+        child: HomeBody(),
       ),
       bottomNavigationBar: BottomBar(
         0,

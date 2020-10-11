@@ -1,15 +1,16 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:theebad/src/constants/app_colors.dart';
 
 class AppTheme {
   final themeData = ThemeData(
     // backgroundColor: AppColors.bodyBackground,
-    fontFamily: 'Sukhumvit',
-    // textTheme: GoogleFonts.prom .apply(
-    //   displayColor: Colors.white,
-    // ),
+    // fontFamily: 'Sukhumvit',
+    textTheme: GoogleFonts.lalezarTextTheme().apply(
+      displayColor: Colors.white,
+    ),
     primarySwatch: Colors.blue,
     primaryColor: AppColors.commonWhite,
     appBarTheme: AppBarTheme(
@@ -21,6 +22,7 @@ class AppTheme {
       iconTheme: IconThemeData(
         color: AppColors.commonBlack,
       ),
+      textTheme: GoogleFonts.lalezarTextTheme().apply(),
       // textTheme: TextTheme(
       //   headline1: TextStyle(fontSize: 4.0, fontWeight: FontWeight.bold),
       //   headline2: TextStyle(fontSize: 42.0, fontWeight: FontWeight.bold),

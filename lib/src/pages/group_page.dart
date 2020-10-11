@@ -13,7 +13,8 @@ class GroupPage extends StatelessWidget {
           'Feed',
           style: TextStyle(
             color: AppColors.commonBlack,
-            fontWeight: FontWeight.bold,
+            // fontWeight: FontWeight.bold,
+            fontSize: 26,
           ),
         ),
       ),

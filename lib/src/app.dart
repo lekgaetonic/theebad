@@ -10,6 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      defaultTransition: Transition.noTransition,
       title: 'app_name'.tr,
       translations: Messages(), // your translations
       // locale: ui.window.locale,

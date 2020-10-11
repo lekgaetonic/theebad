@@ -44,9 +44,9 @@ dependencies:
   splashscreen: ^1.2.0
 
 flutter_icons:
-  android: "launcher_icon"
+  android: true
   ios: true
-  image_path: "assets/icon/icon.png"
+  image_path: "assets/icon/web_hi_res_512.png"
 
 dev_dependencies:
   flutter_test:

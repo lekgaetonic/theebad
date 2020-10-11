@@ -10,10 +10,11 @@ class MessagePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
-          'Feed',
+          'Message',
           style: TextStyle(
             color: AppColors.commonBlack,
-            fontWeight: FontWeight.bold,
+            // fontWeight: FontWeight.bold,
+            fontSize: 26,
           ),
         ),
       ),
