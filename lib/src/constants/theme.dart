@@ -7,10 +7,10 @@ import 'package:theebad/src/constants/app_colors.dart';
 class AppTheme {
   final themeData = ThemeData(
     // backgroundColor: AppColors.bodyBackground,
-    // fontFamily: 'Sukhumvit',
-    textTheme: GoogleFonts.maitreeTextTheme().apply(
-      displayColor: Colors.white,
-    ),
+    fontFamily: 'Sukhumvit',
+    // textTheme: GoogleFonts.maitreeTextTheme().apply(
+    //   displayColor: Colors.white,
+    // ),
     primarySwatch: Colors.blue,
     primaryColor: AppColors.commonWhite,
     appBarTheme: AppBarTheme(
@@ -36,7 +36,7 @@ class AppTheme {
     visualDensity: VisualDensity.adaptivePlatformDensity,
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
       elevation: 0,
-      backgroundColor: AppColors.bottomNavigaionBackground,
+      backgroundColor: AppColors.bottomNavigationBackground,
       selectedItemColor: AppColors.bottomNavigationSelected,
       unselectedItemColor: AppColors.bottomNavigationUnselected,
     ),

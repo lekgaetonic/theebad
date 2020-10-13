@@ -1,7 +1,6 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icons.dart';
 import 'package:theebad/src/constants/app_colors.dart';
 
 class HomeBody extends StatelessWidget {
@@ -26,7 +25,7 @@ class HomeBody extends StatelessWidget {
             child: Text(
               'Find badminton court',
               style: TextStyle(
-                fontSize: 28,
+                fontSize: 24,
                 color: AppColors.commonBlack,
               ),
             ),
@@ -34,23 +33,24 @@ class HomeBody extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(16.0),
             child: Container(
+              height: 50,
               child: Row(
                 children: [
                   Expanded(
                     flex: 4,
                     child: TextField(
-                      // style: TextStyle(fontSize: 14),
+                      // style: TextStyle(fontSize: 20),
                       decoration: new InputDecoration(
                         filled: true,
-                        fillColor: AppColors.commonWhite,
+                        fillColor: Colors.teal[100],
                         isDense: true,
                         focusedBorder: OutlineInputBorder(
                           borderRadius: const BorderRadius.all(
                             const Radius.circular(35.0),
                           ),
                           borderSide: BorderSide(
-                            color: AppColors.bodyBackground,
-                            width: 2.0,
+                            color: Colors.transparent,
+                            width: 1.0,
                           ),
                         ),
                         enabledBorder: OutlineInputBorder(
@@ -58,8 +58,8 @@ class HomeBody extends StatelessWidget {
                             const Radius.circular(35.0),
                           ),
                           borderSide: BorderSide(
-                            color: AppColors.bodyBackground,
-                            width: 2.0,
+                            color: Colors.transparent,
+                            width: 1.0,
                           ),
                         ),
                         hintText: 'Search...',
@@ -67,7 +67,7 @@ class HomeBody extends StatelessWidget {
                         // labelText: 'Life story',
                         prefixIcon: const Icon(
                           EvaIcons.search,
-                          color: AppColors.bottomNavigationSelected,
+                          color: Colors.black54,
                           size: 26,
                         ),
                       ),
@@ -78,16 +78,16 @@ class HomeBody extends StatelessWidget {
                     child: Center(
                       child: ClipOval(
                         child: Material(
-                          color: AppColors.bodyBackground, // button color
+                          color: Colors.teal[100], // button color
                           child: InkWell(
                             splashColor: AppColors
                                 .bottomNavigationSelected, // inkwell color
                             child: SizedBox(
-                                width: 56,
-                                height: 56,
+                                width: 50,
+                                height: 50,
                                 child: Icon(
                                   EvaIcons.options2Outline,
-                                  color: AppColors.lightBlack,
+                                  color: Colors.black54,
                                 )),
                             onTap: () {},
                           ),
@@ -107,13 +107,13 @@ class HomeBody extends StatelessWidget {
             child: Text(
               'Popular locations',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 color: AppColors.lightBlack,
               ),
             ),
           ),
           Container(
-            height: 180,
+            height: 150,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10,
@@ -136,6 +136,20 @@ class HomeBody extends StatelessWidget {
                               Text(
                                 'CC Rama2',
                                 style: TextStyle(
+                                    shadows: [
+                                      Shadow(
+                                        blurRadius: 10.0,
+                                        color: Colors.black,
+                                        offset: Offset(5.0, 5.0),
+                                      ),
+                                    ],
+                                    color: AppColors.commonWhite,
+                                    fontSize: 16,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                '220 Bath/hr.',
+                                style: TextStyle(
                                   shadows: [
                                     Shadow(
                                       blurRadius: 10.0,
@@ -144,7 +158,7 @@ class HomeBody extends StatelessWidget {
                                     ),
                                   ],
                                   color: AppColors.commonWhite,
-                                  fontSize: 20,
+                                  fontSize: 14,
                                 ),
                               ),
                               Text(
@@ -158,21 +172,7 @@ class HomeBody extends StatelessWidget {
                                     ),
                                   ],
                                   color: AppColors.commonWhite,
-                                  fontSize: 18,
-                                ),
-                              ),
-                              Text(
-                                '220 Bath/hr.',
-                                style: TextStyle(
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius: 10.0,
-                                      color: Colors.black,
-                                      offset: Offset(5.0, 5.0),
-                                    ),
-                                  ],
-                                  color: AppColors.commonWhite,
-                                  fontSize: 18,
+                                  fontSize: 14,
                                 ),
                               ),
                             ],
@@ -193,13 +193,13 @@ class HomeBody extends StatelessWidget {
             child: Text(
               'Near by you',
               style: TextStyle(
-                fontSize: 20,
+                fontSize: 18,
                 color: AppColors.lightBlack,
               ),
             ),
           ),
           Container(
-            height: 240,
+            height: 200,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 10,
@@ -230,22 +230,8 @@ class HomeBody extends StatelessWidget {
                                       ),
                                     ],
                                     color: Colors.white,
-                                    fontSize: 20,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                '5 km.',
-                                style: TextStyle(
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius: 10.0,
-                                      color: Colors.black,
-                                      offset: Offset(5.0, 5.0),
-                                    ),
-                                  ],
-                                  color: Colors.white,
-                                  fontSize: 18,
-                                ),
                               ),
                               Text(
                                 '220 Bath/hr.',
@@ -258,7 +244,21 @@ class HomeBody extends StatelessWidget {
                                     ),
                                   ],
                                   color: Colors.white,
-                                  fontSize: 18,
+                                  fontSize: 14,
+                                ),
+                              ),
+                              Text(
+                                '5 km.',
+                                style: TextStyle(
+                                  shadows: [
+                                    Shadow(
+                                      blurRadius: 10.0,
+                                      color: Colors.black,
+                                      offset: Offset(5.0, 5.0),
+                                    ),
+                                  ],
+                                  color: Colors.white,
+                                  fontSize: 14,
                                 ),
                               ),
                             ],

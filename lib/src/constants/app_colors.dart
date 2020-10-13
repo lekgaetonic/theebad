@@ -6,7 +6,7 @@ class AppColors {
   static const commonBlack = Color(0xFF333333);
   static const lightBlack = Color(0xFF434343);
   static const bodyBackground = Color(0xFFe5989b);
-  static const bottomNavigaionBackground = commonBlack;
+  static const bottomNavigationBackground = commonBlack;
   static const bottomNavigationSelected = Color(0xFFB5838D);
   static const bottomNavigationUnselected = Color(0xFF6D6875);
 }
