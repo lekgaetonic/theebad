@@ -8,7 +8,7 @@ class AppTheme {
   final themeData = ThemeData(
     // backgroundColor: AppColors.bodyBackground,
     // fontFamily: 'Sukhumvit',
-    textTheme: GoogleFonts.lalezarTextTheme().apply(
+    textTheme: GoogleFonts.maitreeTextTheme().apply(
       displayColor: Colors.white,
     ),
     primarySwatch: Colors.blue,

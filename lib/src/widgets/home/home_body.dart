@@ -26,7 +26,7 @@ class HomeBody extends StatelessWidget {
             child: Text(
               'Find badminton court',
               style: TextStyle(
-                fontSize: 30,
+                fontSize: 28,
                 color: AppColors.commonBlack,
               ),
             ),
@@ -39,7 +39,7 @@ class HomeBody extends StatelessWidget {
                   Expanded(
                     flex: 4,
                     child: TextField(
-                      // style: TextStyle(fontSize: 2),
+                      // style: TextStyle(fontSize: 14),
                       decoration: new InputDecoration(
                         filled: true,
                         fillColor: AppColors.commonWhite,
@@ -50,7 +50,7 @@ class HomeBody extends StatelessWidget {
                           ),
                           borderSide: BorderSide(
                             color: AppColors.bodyBackground,
-                            width: 3.0,
+                            width: 2.0,
                           ),
                         ),
                         enabledBorder: OutlineInputBorder(
@@ -59,7 +59,7 @@ class HomeBody extends StatelessWidget {
                           ),
                           borderSide: BorderSide(
                             color: AppColors.bodyBackground,
-                            width: 3.0,
+                            width: 2.0,
                           ),
                         ),
                         hintText: 'Search...',
@@ -102,12 +102,12 @@ class HomeBody extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(
               left: 16,
-              top: 32,
+              top: 20,
             ),
             child: Text(
               'Popular locations',
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 20,
                 color: AppColors.lightBlack,
               ),
             ),
@@ -188,12 +188,12 @@ class HomeBody extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(
               left: 16,
-              top: 32,
+              top: 20,
             ),
             child: Text(
               'Near by you',
               style: TextStyle(
-                fontSize: 22,
+                fontSize: 20,
                 color: AppColors.lightBlack,
               ),
             ),
@@ -258,92 +258,6 @@ class HomeBody extends StatelessWidget {
                                     ),
                                   ],
                                   color: Colors.white,
-                                  fontSize: 18,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                );
-              },
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(
-              left: 16,
-              top: 32,
-            ),
-            child: Text(
-              'Events',
-              style: TextStyle(
-                fontSize: 22,
-                color: AppColors.lightBlack,
-              ),
-            ),
-          ),
-          Container(
-            height: 180,
-            child: ListView.builder(
-              scrollDirection: Axis.horizontal,
-              itemCount: 10,
-              itemBuilder: (BuildContext ctxt, int index) {
-                return Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(8.0),
-                    child: Stack(
-                      children: [
-                        Image.network((index % 2) == 0
-                            ? 'https://scontent.fbkk5-4.fna.fbcdn.net/v/t1.0-9/87053613_2642685715829589_8584973921952989184_n.jpg?_nc_cat=110&_nc_sid=110474&_nc_ohc=GHum0tIno0YAX_7lUbo&_nc_ht=scontent.fbkk5-4.fna&oh=c791bed35e1fe8f66916a17d4567319b&oe=5FA70C9C'
-                            : 'https://scontent.fbkk5-8.fna.fbcdn.net/v/t1.0-9/73528684_2404882276276602_8370391445969829888_n.jpg?_nc_cat=106&_nc_sid=110474&_nc_ohc=B_qu0H0mh3oAX8NOF8H&_nc_ht=scontent.fbkk5-8.fna&oh=1daff8072a5e74d95cdf7e6a3a99370a&oe=5FA6B020'),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 8.0, right: 8),
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.end,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'CC Rama2',
-                                style: TextStyle(
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius: 10.0,
-                                      color: Colors.black,
-                                      offset: Offset(5.0, 5.0),
-                                    ),
-                                  ],
-                                  color: AppColors.commonWhite,
-                                  fontSize: 20,
-                                ),
-                              ),
-                              Text(
-                                '5 km.',
-                                style: TextStyle(
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius: 10.0,
-                                      color: Colors.black,
-                                      offset: Offset(5.0, 5.0),
-                                    ),
-                                  ],
-                                  color: AppColors.commonWhite,
-                                  fontSize: 18,
-                                ),
-                              ),
-                              Text(
-                                '220 Bath/hr.',
-                                style: TextStyle(
-                                  shadows: [
-                                    Shadow(
-                                      blurRadius: 10.0,
-                                      color: Colors.black,
-                                      offset: Offset(5.0, 5.0),
-                                    ),
-                                  ],
-                                  color: AppColors.commonWhite,
                                   fontSize: 18,
                                 ),
                               ),
