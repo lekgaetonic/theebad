@@ -42,11 +42,12 @@ dependencies:
   html_unescape: ^1.0.2
   google_fonts: ^1.1.0
   splashscreen: ^1.2.0
+  geolocator: ^6.0.0
 
 flutter_icons:
   android: true
   ios: true
-  image_path: "assets/icon/web_hi_res_512.png"
+  image_path: "assets/icon/ic_launcher.png"
 
 dev_dependencies:
   flutter_test:
