@@ -6,13 +6,13 @@ class MessagePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.commonWhite,
+      backgroundColor: AppColors.bodyBackground,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(
           'Message',
           style: TextStyle(
-            color: AppColors.commonBlack,
+            color: AppColors.header,
             // fontWeight: FontWeight.bold,
             fontSize: 26,
           ),

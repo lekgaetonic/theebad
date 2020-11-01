@@ -1,7 +1,10 @@
+import 'package:camera/camera.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:theebad/src/constants/app_colors.dart';
+import 'package:theebad/src/widgets/shared/see_all.dart';
+import 'package:theebad/src/widgets/shared/custom_title.dart';
 
 class HomeBody extends StatelessWidget {
   @override
@@ -16,7 +19,7 @@ class HomeBody extends StatelessWidget {
               'Find badminton court',
               style: TextStyle(
                 fontSize: 24,
-                color: AppColors.commonBlack,
+                color: AppColors.header,
               ),
             ),
           ),
@@ -29,11 +32,12 @@ class HomeBody extends StatelessWidget {
                   Expanded(
                     flex: 4,
                     child: TextField(
-                      // style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 18),
                       decoration: new InputDecoration(
                         filled: true,
-                        fillColor: Colors.teal[100],
-                        isDense: true,
+                        fillColor: AppColors.bottomNavigationBackground,
+                        // isDense: true,
+                        contentPadding: EdgeInsets.all(8),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: const BorderRadius.all(
                             const Radius.circular(35.0),
@@ -57,7 +61,7 @@ class HomeBody extends StatelessWidget {
                         // labelText: 'Life story',
                         prefixIcon: const Icon(
                           EvaIcons.search,
-                          color: Colors.black54,
+                          color: Colors.black45,
                           size: 26,
                         ),
                       ),
@@ -68,16 +72,16 @@ class HomeBody extends StatelessWidget {
                     child: Center(
                       child: ClipOval(
                         child: Material(
-                          color: Colors.teal[100], // button color
+                          color: AppColors
+                              .bottomNavigationSelected, // button color
                           child: InkWell(
-                            splashColor: AppColors
-                                .bottomNavigationSelected, // inkwell color
+                            splashColor: Colors.green[200], // inkwell color
                             child: SizedBox(
                                 width: 48,
                                 height: 48,
                                 child: Icon(
                                   EvaIcons.options2Outline,
-                                  color: Colors.black54,
+                                  color: AppColors.commonWhite,
                                 )),
                             onTap: () {},
                           ),
@@ -96,30 +100,8 @@ class HomeBody extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Expanded(
-                  child: Text(
-                    'Popular locations',
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: AppColors.lightBlack,
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 16.0),
-                    child: Align(
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        'See All',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.blueGrey,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
+                CustomTitle('Popular locations'),
+                SeeAll(),
               ],
             ),
           ),
@@ -211,30 +193,8 @@ class HomeBody extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Expanded(
-                  child: Text(
-                    'Nearby you',
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: AppColors.lightBlack,
-                    ),
-                  ),
-                ),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.only(right: 16.0),
-                    child: Align(
-                      alignment: Alignment.centerRight,
-                      child: Text(
-                        'See All',
-                        style: TextStyle(
-                          fontSize: 14,
-                          color: Colors.blueGrey,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
+                CustomTitle('Nearby you'),
+                SeeAll(),
               ],
             ),
           ),

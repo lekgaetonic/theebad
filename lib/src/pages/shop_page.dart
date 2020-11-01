@@ -12,7 +12,7 @@ class ShopPage extends StatelessWidget {
         title: Text(
           'Shopping',
           style: TextStyle(
-            color: AppColors.commonBlack,
+            color: AppColors.header,
             // fontWeight: FontWeight.bold,
             fontSize: 26,
           ),

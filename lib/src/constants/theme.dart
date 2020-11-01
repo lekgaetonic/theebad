@@ -12,7 +12,7 @@ class AppTheme {
     //   displayColor: Colors.white,
     // ),
     primarySwatch: Colors.blue,
-    primaryColor: AppColors.commonWhite,
+    primaryColor: AppColors.bottomNavigationSelected,
     appBarTheme: AppBarTheme(
       color: Colors.transparent,
       elevation: 0,
@@ -20,7 +20,7 @@ class AppTheme {
       // brightness: Brightness.light,
       shadowColor: Colors.transparent,
       iconTheme: IconThemeData(
-        color: AppColors.commonBlack,
+        color: AppColors.header,
       ),
       textTheme: GoogleFonts.lalezarTextTheme().apply(),
       // textTheme: TextTheme(

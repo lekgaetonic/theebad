@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:theebad/src/constants/app_colors.dart';
 
 import '../widgets/shared/bottom_bar.dart';
 
@@ -7,7 +8,7 @@ class CartPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepOrangeAccent,
+      backgroundColor: AppColors.bodyBackground,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         title: Text(

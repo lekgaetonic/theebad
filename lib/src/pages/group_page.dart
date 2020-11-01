@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:theebad/src/constants/app_colors.dart';
 import 'package:theebad/src/controllers/group_controller.dart';
 import 'package:theebad/src/widgets/shared/bottom_bar.dart';
+import 'package:theebad/src/widgets/shared/custom_card.dart';
 
 class GroupPage extends StatelessWidget {
   @override
@@ -12,11 +13,12 @@ class GroupPage extends StatelessWidget {
     return Scaffold(
       backgroundColor: AppColors.bodyBackground,
       appBar: AppBar(
+        brightness: Brightness.light,
         backgroundColor: Colors.transparent,
         title: Text(
           'Feed',
           style: TextStyle(
-            color: AppColors.commonBlack,
+            color: AppColors.header,
             // fontWeight: FontWeight.bold,
             fontSize: 26,
           ),
@@ -24,27 +26,32 @@ class GroupPage extends StatelessWidget {
       ),
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Positioned(
-                left: 30.0,
-                top: 30.0,
-                child: new Container(
-                  width: 100.0,
-                  height: 80.0,
-                  decoration: new BoxDecoration(color: Colors.red),
-                  child: new Text('hello'),
-                ),
-              ),
-              Obx(() => _groupController.position.value != null
-                  ? Text(_groupController.position.value.latitude.toString())
-                  : Container()),
-              Obx(() => _groupController.position.value != null
-                  ? Text(_groupController.position.value.longitude.toString())
-                  : Container()),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                CustomCard(),
+                CustomCard(),
+                CustomCard(),
+                CustomCard(),
+                CustomCard(),
+                CustomCard(),
+                CustomCard(),
+                CustomCard(),
+              ],
+            ),
           ),
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: AppColors.bottomNavigationSelected,
+        child: Icon(Icons.edit),
+        onPressed: () async {
+          try {} catch (e) {
+            print(e);
+          }
+        },
       ),
       bottomNavigationBar: BottomBar(
         1,

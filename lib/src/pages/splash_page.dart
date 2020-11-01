@@ -9,6 +9,7 @@ class SplashPage extends StatelessWidget {
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: SystemUiOverlayStyle(
         statusBarColor: Colors.transparent,
+        statusBarBrightness: Brightness.light,
       ),
       child: SplashScreen(
         seconds: 1,
